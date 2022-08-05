@@ -70,8 +70,6 @@ public class QuizResultActivity extends AppCompatActivity {
 
         btnDone.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) { //score will be stored in realtime db in specific subject name ex: Numeracy score.
-//                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-//                QuizResultActivity.this.finish();
                 databaseReference.child("Score").child(firebaseUser.getUid()).child("score")
                         .addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override

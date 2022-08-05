@@ -306,7 +306,6 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             txtQuesNumber.setText(String.valueOf(quesNum+1)+"/"+String.valueOf(questionList.size())); //setting up what number will be in the quiz
 
 
-            //txtTimer.setText(String.valueOf(60)); //10 seconds timer
             startTimer(); //start the timer again
 
         }else{

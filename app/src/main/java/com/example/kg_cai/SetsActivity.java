@@ -65,8 +65,6 @@ public class SetsActivity extends AppCompatActivity {
                         String setName = doc.getString("SET" + String.valueOf(i) + "_NAME"); //getting the SETS NAME and loop it to get the CAT_NAME in firebase
                         String setID = doc.getString("SET" + String.valueOf(i) + "_ID"); //getting the SETS ID and loop it to get the CAT_ID in firebase
 
-//                        Log.d("SET NAME: ", setName);
-//                        Log.d("SET ID: ", setID);
 
                         setsList.add(new SetsModelClass(setID, setName, "0", "1"));
                         setsIDs.add(doc.getString("SET" + String.valueOf(i) + "_ID"));

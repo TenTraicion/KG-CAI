@@ -59,11 +59,6 @@ public class TextActivity extends AppCompatActivity {
         progressDialog.setMessage("Uploading...");
         progressDialog.setCanceledOnTouchOutside(false);
 
-//        Toolbar toolbar = findViewById(R.id.toolbar_addVideos);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Text");
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         mReference.orderByChild("Title").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

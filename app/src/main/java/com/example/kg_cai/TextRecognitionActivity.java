@@ -87,7 +87,6 @@ public class TextRecognitionActivity extends AppCompatActivity {
                 }
                 textRecogAdapter = new TextRecogAdapter(list, TextRecognitionActivity.this);
                 textRecogRv.setAdapter(textRecogAdapter);
-                //ProgressBar.setVisibility(View.GONE);
             }
 
             @Override
@@ -108,7 +107,6 @@ public class TextRecognitionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 detectTextFromImg();
-                //Toast.makeText(getApplicationContext(), txtScanText.getText().toString().trim(), Toast.LENGTH_SHORT).show();
 
             }
         });

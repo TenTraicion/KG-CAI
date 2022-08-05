@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        //btnTextRecognition = findViewById(R.id.btnTextRecognition);
         btnStartQuiz = findViewById(R.id.btnStartQuiz_Main);
         btnLeaderBoards = findViewById(R.id.btnLeaderboards);
         btnText_Main = findViewById(R.id.btnText_Main);
@@ -64,14 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-//
-//        btnTextRecognition.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(), TextRecognitionActivity.class));
-//            }
-//        });
 
         btnLeaderBoards.setOnClickListener(new View.OnClickListener() {
             @Override
